@@ -7,7 +7,7 @@ Por ejemplo, supongamos que tienes un contenedor que ejecuta un servidor web en 
 ### Para crear un mapeo de puertos (puerto host y puerto contenedor)
 El mapeo de puertos se especifica al ejecutar un contenedor Docker utilizando la opción -p o --publish seguida de los puertos que deseas mapear
 ```
-docker run -d --name <nombre contenedor> -p <puerto host>:<puerto contenedor> <nombre imagen>:<tag>
+docker run -d --name said-mp -p 3000:80 nginx:alpine
 
 ```
 Crear un contenedor a partir de la imagen nginx version alpine con el mapeo de puertos del ejemplo gráfico, host 3000 y contenedor 80
@@ -18,7 +18,7 @@ Crear un contenedor a partir de la imagen nginx version alpine con el mapeo de p
 ### Para mapear más de un puerto
 
 ```
-docker run -d --name <nombre contenedor> -p <puerto host 01>:<puerto contenedor 01> -p <puerto host 02>:<puerto contenedor 02> <nombre imagen>:<tag>
+docker run -d --name said-mp2 -p 5672:5672 -p 15672:15672 rabbitmq:management-alpine
 ```
 
 Crear un contenedor a partir de la imagen rabbitmq version management-alpine, para este mapeo de puertos usar en el host los mismos puertos del contenedor.
