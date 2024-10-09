@@ -79,6 +79,9 @@ Eliminar el contenedor que se creó a partir de la imagen hello-world
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
+
+![Contenedor hello-world eliminado](img/eliminacioncontenedor-Hello-World.png)
+
 # COMPLETAR
 
 ### Para eliminar un contenedor que esté ejecutándose
@@ -90,6 +93,9 @@ Eliminar el contenedor **srv-web3**
 # COMPLETAR
 
 Verificar que el contenedor que se eliminó
+
+![Contenedor srv-web3 eliminado](img/eliminacioncontenedor-srv-web3.png)
+
 # COMPLETAR
 
 ### Para inspecionar un contenedor 
@@ -99,4 +105,7 @@ docker inspect srv-web
 ```
 
 Inspeccionar el contenedor **srv-web** 
+
+![Inspeccion contenedor srv-web](img/inspeccioncontenedor-srv-web.png)
+
 # COMPLETAR
